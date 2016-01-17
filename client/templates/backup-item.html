@@ -1,0 +1,14 @@
+<template name="backupItem">
+  <div class="list-item space-left {{editingClass}}">
+    <a class="js-download-backup-item download-item" href="{{this.url download=true}}">
+      <i class="material-icons">file_download</i>
+    </a>
+    
+    <a class="js-import-backup-item download-item" href="#">
+      <i class="material-icons">file_upload</i>
+    </a>
+    
+    <input type="text" value="{{name}}" placeholder="Backup name" readonly>
+    <a class="js-delete-backup-item delete-item" href="#"><span class="icon-trash"></span></a>
+  </div>
+</template>
